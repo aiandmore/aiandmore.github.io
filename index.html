@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI and More</title>
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -59,43 +61,37 @@
       box-shadow: 0 0 15px rgba(255,255,255,0.2);
     }
 
-    /* Video Carousel */
-    .carousel {
+    /* Video Section */
+    .video-wrapper {
       display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      gap: 1rem;
-      padding: 1rem 0;
+      justify-content: center;
+      margin: 1rem 0;
     }
 
-    .carousel video,
-    .carousel .placeholder {
-      flex: 0 0 auto;
-      width: 300px;
-      height: 180px;
+    .video-wrapper iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
       border-radius: 8px;
-      scroll-snap-align: start;
-      background: #111;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #aaa;
-      font-size: 1rem;
-      text-align: center;
+      border: none;
     }
 
     /* Social Links */
     .social-links {
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem;
       margin-top: 1rem;
     }
 
     .social-links a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
       color: #fff;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       border: 1px solid #fff;
       padding: 0.5rem 1rem;
       border-radius: 8px;
@@ -145,14 +141,16 @@
       <p class="motto">Our motto: <strong>"AI for good"</strong></p>
     </section>
 
-    <!-- Podcast Videos -->
+    <!-- Podcast Video -->
     <section>
-      <h2>Our Podcast Videos</h2>
-      <div class="carousel">
-        <!-- Replace these placeholders with real video files when ready -->
-        <div class="placeholder">🎥 Episode 1<br>Coming Soon</div>
-        <div class="placeholder">🎥 Episode 2<br>Coming Soon</div>
-        <div class="placeholder">🎥 Episode 3<br>Coming Soon</div>
+      <h2>Latest Podcast Episode</h2>
+      <div class="video-wrapper">
+        <!-- Replace VIDEO_ID with your YouTube video ID -->
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" 
+                title="AI and More Podcast" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
       </div>
     </section>
 
@@ -160,8 +158,15 @@
     <section>
       <h2>Find Us Online</h2>
       <div class="social-links">
-        <a href="#" target="_blank">YouTube</a>
-        <a href="#" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/@AIandmoregenz" target="_blank">
+          <i class="fab fa-youtube"></i> YouTube
+        </a>
+        <a href="https://www.instagram.com/aiandmore2025/" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://www.tiktok.com/@aiandmore2025" target="_blank">
+          <i class="fab fa-tiktok"></i> TikTok
+        </a>
       </div>
     </section>
   </main>
