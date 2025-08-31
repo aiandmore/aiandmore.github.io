@@ -6,6 +6,8 @@
   <title>AI and More</title>
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
     body {
       margin: 0;
@@ -20,9 +22,19 @@
       font-weight: bold;
       border-bottom: 1px solid #444;
     }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
     h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
       text-align: center;
-      margin: 2rem 0 1rem 0;
+    }
+    p {
+      line-height: 1.6;
+      text-align: center;
     }
     /* Video carousel */
     .swiper {
@@ -41,10 +53,30 @@
       border-radius: 8px;
       border: none;
     }
-    /* Swiper buttons */
     .swiper-button-next,
     .swiper-button-prev {
       color: #fff;
+    }
+    /* Social icons */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .social-links a {
+      color: white;
+      font-size: 2rem;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #00acee; /* blue highlight */
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #444;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -52,8 +84,16 @@
   <header>AI and More</header>
 
   <main>
-    <h2>Our Podcast Episodes</h2>
+    <h2>About Us</h2>
+    <p>
+      We are here to learn more about AI while having fun with it.  
+      It is a podcast hosted by Gen Z 11 and Gen Z 99 — two Gen Z people teaching everyone to use AI.  
+      We share our screen, show how we use AI, and have fun with humor.  
+      Since it’s an age gap, Gen Z 99 teaches stuff to Gen Z 11.  
+      Our motto: <strong>"AI for Good"</strong>.
+    </p>
 
+    <h2>Our Podcast Episodes</h2>
     <!-- Swiper Container -->
     <div class="swiper">
       <div class="swiper-wrapper">
@@ -63,8 +103,8 @@
                   title="Podcast Episode 1" 
                   allowfullscreen></iframe>
         </div>
-        <!-- Future videos go here -->
-        <!-- Example:
+        <!-- Future videos: copy this block and replace VIDEO_ID -->
+        <!--
         <div class="swiper-slide">
           <iframe src="https://www.youtube.com/embed/ANOTHER_VIDEO_ID"
                   title="Podcast Episode 2"
@@ -72,14 +112,27 @@
         </div>
         -->
       </div>
-
       <!-- Navigation arrows -->
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <!-- Pagination dots -->
       <div class="swiper-pagination"></div>
     </div>
+
+    <h2>Follow Us</h2>
+    <div class="social-links">
+      <a href="https://www.youtube.com/@AIandmoregenz" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/aiandmore2025/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@aiandmore2025" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:aiandmore2025@gmail.com" style="color: #00acee;">aiandmore2025@gmail.com</a></p>
   </main>
+
+  <footer>
+    &copy; 2025 AI and More. All rights reserved.
+  </footer>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
