@@ -4,175 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI and More</title>
-  <!-- Font Awesome for social media icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #000; /* black background */
-      color: #fff; /* white text */
-      line-height: 1.6;
+      background-color: #000;
+      color: #fff;
     }
-
     header {
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem;
       font-size: 2.5rem;
       font-weight: bold;
       border-bottom: 1px solid #444;
     }
-
-    main {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
     h2 {
-      font-size: 1.8rem;
-      margin-bottom: 0.8rem;
-      border-bottom: 1px solid #444;
-      padding-bottom: 0.5rem;
-    }
-
-    .motto {
       text-align: center;
-      font-style: italic;
-      font-size: 1.3rem;
-      margin-top: 1.5rem;
+      margin: 2rem 0 1rem 0;
     }
-
-    /* Hosts Image */
-    .hosts-photo {
-      display: flex;
-      justify-content: center;
-      margin: 2rem 0;
-    }
-
-    .hosts-photo img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255,255,255,0.2);
-    }
-
-    /* Video Section */
-    .video-wrapper {
-      display: flex;
-      justify-content: center;
-      margin: 1rem 0;
-    }
-
-    .video-wrapper iframe {
+    /* Video carousel */
+    .swiper {
       width: 100%;
-      max-width: 560px;
-      height: 315px;
+      max-width: 800px;
+      padding: 2rem 0;
+    }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+    iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
       border-radius: 8px;
       border: none;
     }
-
-    /* Social Links */
-    .social-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .social-links a {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+    /* Swiper buttons */
+    .swiper-button-next,
+    .swiper-button-prev {
       color: #fff;
-      text-decoration: none;
-      font-size: 1.1rem;
-      border: 1px solid #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-
-    .social-links a:hover {
-      background: #fff;
-      color: #000;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 1rem;
-      padding: 1rem;
-      border-top: 1px solid #444;
-      margin-top: 2rem;
-    }
-
-    a {
-      color: #fff;
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>AI and More</header>
+
   <main>
-    <!-- About -->
-    <section>
-      <h2>About Us</h2>
-      <p>
-        We are here to learn more about AI while having fun with it.  
-        <br><br>
-        <strong>AI and More</strong> is a podcast hosted by <b>Gen Z 11</b> and <b>Gen Z 99</b>,  
-        two Gen Z creators teaching everyone how to use AI.  
-        It’s a place where we share the screen, explore how we use AI in real life,  
-        and add a touch of humor along the way.  
-        <br><br>
-        With an age gap between the hosts, Gen Z 99 often teaches new things to Gen Z 11,  
-        making it both educational and fun for all ages.
-      </p>
-      <div class="hosts-photo">
-        <!-- Replace hosts.jpg with your actual file name -->
-        <img src="hosts.jpg" alt="Gen Z 11 and Gen Z 99 - Hosts of AI and More">
-      </div>
-      <p class="motto">Our motto: <strong>"AI for good"</strong></p>
-    </section>
+    <h2>Our Podcast Episodes</h2>
 
-    <!-- Podcast Video -->
-    <section>
-      <h2>Latest Podcast Episode</h2>
-      <div class="video-wrapper">
-        <!-- Replace VIDEO_ID with your YouTube video ID -->
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" 
-                title="AI and More Podcast" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-        </iframe>
+    <!-- Swiper Container -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Video 1 -->
+        <div class="swiper-slide">
+          <iframe src="https://www.youtube.com/embed/INp4RWbCiac" 
+                  title="Podcast Episode 1" 
+                  allowfullscreen></iframe>
+        </div>
+        <!-- Future videos go here -->
+        <!-- Example:
+        <div class="swiper-slide">
+          <iframe src="https://www.youtube.com/embed/ANOTHER_VIDEO_ID"
+                  title="Podcast Episode 2"
+                  allowfullscreen></iframe>
+        </div>
+        -->
       </div>
-    </section>
 
-    <!-- Social Media -->
-    <section>
-      <h2>Find Us Online</h2>
-      <div class="social-links">
-        <a href="https://www.youtube.com/@AIandmoregenz" target="_blank">
-          <i class="fab fa-youtube"></i> YouTube
-        </a>
-        <a href="https://www.instagram.com/aiandmore2025/" target="_blank">
-          <i class="fab fa-instagram"></i> Instagram
-        </a>
-        <a href="https://www.tiktok.com/@aiandmore2025" target="_blank">
-          <i class="fab fa-tiktok"></i> TikTok
-        </a>
-      </div>
-    </section>
+      <!-- Navigation arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Pagination dots -->
+      <div class="swiper-pagination"></div>
+    </div>
   </main>
 
-  <footer>
-    <p>Contact us: <a href="mailto:aiandmore2025@gmail.com">aiandmore2025@gmail.com</a></p>
-  </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 </html>
