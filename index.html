@@ -36,6 +36,18 @@
       line-height: 1.6;
       text-align: center;
     }
+    /* About section with image */
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .about img {
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    }
     /* Video carousel */
     .swiper {
       width: 100%;
@@ -85,13 +97,16 @@
 
   <main>
     <h2>About Us</h2>
-    <p>
-      We are here to learn more about AI while having fun with it.  
-      It is a podcast hosted by Gen Z 11 and Gen Z 99 — two Gen Z people teaching everyone to use AI.  
-      We share our screen, show how we use AI, and have fun with humor.  
-      Since it’s an age gap, Gen Z 99 teaches stuff to Gen Z 11.  
-      Our motto: <strong>"AI for Good"</strong>.
-    </p>
+    <div class="about">
+      <img src="hosts.jpg" alt="AI and More Hosts">
+      <p>
+        We are here to learn more about AI while having fun with it.  
+        It is a podcast hosted by Gen Z 11 and Gen Z 99 — two Gen Z people teaching everyone to use AI.  
+        We share our screen, show how we use AI, and have fun with humor.  
+        Since it’s an age gap, Gen Z 99 teaches stuff to Gen Z 11.  
+        Our motto: <strong>"AI for Good"</strong>.
+      </p>
+    </div>
 
     <h2>Our Podcast Episodes</h2>
     <!-- Swiper Container -->
